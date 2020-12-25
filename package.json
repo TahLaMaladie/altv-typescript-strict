@@ -1,0 +1,25 @@
+{
+    "name": "altv-typescript-strict",
+    "version": "1.0.0",
+    "description": "Typescript strict applied to alt:V resources development",    
+    "main": "",
+    "scripts": {
+        "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",	
+        "build": "npm run lint && npx tsc && npm run copy",
+        "copy": "copyfiles src/* --exclude=/*.ts --up 1 ./dist"
+    },
+    "author": "TahLaMaladie",
+    "license": "GPL-3.0-or-later",
+    "keywords": ["altv","gtamp","typescript","strict"],
+    "devDependencies": {
+        "@altv/types-client": "^1.4.6",
+        "@altv/types-natives": "^1.1.0",
+        "@altv/types-server": "^1.6.5",
+        "@altv/types-webview": "^1.0.2",
+        "@typescript-eslint/eslint-plugin": "^4.11.0",
+        "@typescript-eslint/parser": "^4.11.0",
+        "copyfiles": "^2.4.1",
+        "eslint": "^7.16.0",
+        "typescript": "^4.1.3"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+	"rootDir": "src",
+	"outDir": "dist",
+	"module": "ESNext",
+	"moduleResolution": "node",
+        "typeRoots": ["./node_modules/@types", "./node_modules/@altv"],
+	"strict": true,
+	"noFallthroughCasesInSwitch": true,
+	"noImplicitReturns": true,
+	"noUncheckedIndexedAccess": true,
+	"noUnusedLocals": true,
+	"noUnusedParameters": true,
+  }
+}
