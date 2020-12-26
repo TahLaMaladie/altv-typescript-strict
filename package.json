@@ -6,7 +6,7 @@
     "scripts": {
         "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",	
         "build": "npm run lint && npx tsc && npm run copy",
-        "copy": "copyfiles src/* --exclude=/*.ts --up 1 ./dist"
+        "copy": "npx copyfiles --all src/**/* --exclude=*.ts --up 1 dist/"
     },
     "author": "TahLaMaladie",
     "license": "GPL-3.0-or-later",
