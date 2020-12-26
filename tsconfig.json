@@ -2,8 +2,7 @@
     "compilerOptions": {
 	"rootDir": "src",
 	"outDir": "dist",
-	"module": "ESNext",
-	"target": "ESNext",
+	"module": "commonjs",
 	"moduleResolution": "node",
     "typeRoots": ["./node_modules/@types", "./node_modules/@altv"],
 	"strict": true,
